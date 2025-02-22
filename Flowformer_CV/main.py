@@ -223,7 +223,10 @@ def main(args):
         mlp_ratio=[4, 4, 4, 4],
         norm_layer=partial(nn.LayerNorm, eps=1e-6), drop_path_rate=0.2, init_values=1e-5
     )
-
+    print("#########################################################################################################")
+    print("Model Layers")
+    print(model)
+    print("#########################################################################################################")
     model.to(device)
 
     model_without_ddp = model
