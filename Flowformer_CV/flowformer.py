@@ -49,7 +49,7 @@ class Mlp(nn.Module):
         return x
 
 
-class MobileAttention(nn.Module):
+class Flow_Attention(nn.Module):
     """
     Mobile Attention with head competing mechanism, adapted to match
     the Flow_Attention API:
